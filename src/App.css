@@ -1,0 +1,110 @@
+.loginPage {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  /* padding: 2px; */
+}
+
+.loginPage .loginPageImage {
+  width: 70%;
+  padding: 2px;
+  height: 100vh;
+  background-image: linear-gradient(rgba(221, 203, 220, 0.2), rgba(123, 185, 209, 0.2)), url("assets/img/csharpgroup.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.loginPage .loginPageButton {
+  width: 30%;
+  height: 100vh;
+  text-align: center;
+  border: 2px solid black;
+  background-image: linear-gradient(rgb(112 74 83), rgb(64 63 62));
+  color: #fff;
+  padding-top: 20%;
+}
+
+.loginPage .loginPageImage img {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.loginPage .loginPageButton button {
+  color: black;
+  letter-spacing: 5px;
+  font-size: 22px;
+  border-radius: 5px;
+  background-color: #67c146;
+  min-width: 40%;
+  margin-top: 10%;
+  animation: color-me-in 5s infinite;
+}
+
+.react-datepicker-wrapper {
+  display: block !important;
+}
+
+.loginPage .loginPageButton button:hover {
+  opacity: 0.8;
+}
+
+.loginPage .loginPageButton h2,
+.loginPage .loginPageButton h5 {
+  animation: rang-me-in 10s infinite;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+@keyframes color-me-in {
+
+  /* You could think of as "step 1" */
+  0% {
+    background: rgb(141, 218, 111);
+    color: rgb(35, 118, 241);
+  }
+
+  /* You could think of as "step 2" */
+  100% {
+    background: #67c146;
+  }
+}
+
+@keyframes rang-me-in {
+
+  /* You could think of as "step 1" */
+  0% {
+    /* color: #fff; */
+    /* color: linear-gradient(#fff, #eec028); */
+    background: linear-gradient(to right, rgb(230, 100, 208), #aec4cd, #225974);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* You could think of as "step 2" */
+  100% {
+    /* color: #eec028; */
+    /* color: linear-gradient(#eec028, #fff); */
+    background: linear-gradient(to right, #225974, #aec4cd, rgb(230, 100, 208));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width : 450px) {
+  .loginPage .loginPageImage {
+    width: 100%;
+    height: 30vh;
+    background-image: none
+  }
+
+  .loginPage .loginPageButton {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .loginPage .loginPageImage img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+}

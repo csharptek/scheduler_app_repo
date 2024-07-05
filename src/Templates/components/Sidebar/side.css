@@ -1,0 +1,101 @@
+.sidebar{
+    background-image: white;
+   
+
+    opacity: 1 !important;
+}
+  
+/* @media(min-width: 355px) and (max-width:991px) {
+
+} */
+.sidebar .sidebar-wrapper {
+  /* background-color:rgb(219, 211, 211) !important; */
+ 
+  /* background-color: rgb(255, 255, 255); */
+  /* background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("https://previews.123rf.com/images/juliasart/juliasart1801/juliasart180100129/92801101-receipt-icon-flat-style-isolated-on-background-invoice-sign-bill-financial-check-paper-receipts-icon.jpg"); */
+  /* background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url("https://cdn.pixabay.com/photo/2020/06/14/19/08/sea-bridge-5299046_960_720.jpg");
+   */
+   background-image: linear-gradient(110deg, #6883bc, #79a7d3 , #8a307f);
+}
+.sidebar .minilogo{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.sidebar .burger:hover{
+background-color: transparent !important;
+}
+.sidebar .burger{
+  background-color: transparent !important;
+  }
+.sidebar .logo .simple-text .logo-mini{
+  width: 30%;
+  margin-top: 6px;
+}
+.sidebarlogo{
+  width: 90%;
+  height: 100%;
+}
+.sideicon{
+  color: #fff;
+}
+.sidebar .logo a.logo-normal {
+  color: black !important;
+  width: 100%;
+
+}
+.sidebar .sidebar-wrapper .btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  margin-top: 10px !important;
+    padding: 7px 5px;
+    padding-left: 0px;
+    font-size: 18px;
+}
+
+.forIcon{
+  width: 85%;
+    position: relative;
+    left: 30px;
+    bottom: 14px;
+}
+
+.sidebar .user .info{
+  margin-left: 5px;
+}
+
+.sidebar .user .info .IconSideBar {
+  font-size: 18px !important;
+}
+
+.sidebar .user .info span {
+  font-size: 12px !important;
+  font-family: Montserrat  !important;
+  color: #fff  !important;
+  font-weight: 700;
+  /* font-family: -apple-system,BlinkMacSystemFont,"Inter UI",Roboto,sans-serif; */
+  letter-spacing: 0.5px;
+  margin-bottom: -14px !important;
+  
+  display: block;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  
+}
+.sidebar .logo .simple-text {
+  text-transform: uppercase;
+  padding: 13px 15px;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 32px;
+  white-space: nowrap;
+  color: #fff;
+  overflow: hidden;
+  /* margin-top: -19px; */
+}
+.csharpteklogo{
+  display: flex;
+}
+
+
+  
