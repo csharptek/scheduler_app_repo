@@ -4,7 +4,7 @@ import { MsalAuthProvider, LoginType } from 'react-aad-msal';
 const config = {
   auth: {
     authority: 'https://login.microsoftonline.com/common/',
-    clientId: '955b16ea-da20-41ee-bc8f-f3ad71d0f21a',
+    clientId: 'enter client id',
     redirectUri: 'http://localhost:3000/callback'
     // redirectUri: 'https://interviewschedulerapp.azurewebsites.net/#/'
   },
