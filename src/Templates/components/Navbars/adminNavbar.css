@@ -29,3 +29,41 @@
     font-size: 12px;
     margin: 6px;
   }
+  .active-nav-item {
+    color: '#023020' !important;  /* Green or your chosen color */
+    font-weight: bold !important;
+  }
+
+  /* Profile dropdown container */
+.profile-dropdown {
+    position: relative;
+  }
+  
+  /* Style the dropdown toggle button */
+  .dropdown-toggle-custom {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background: none;
+  }
+  
+  /* Adjust dropdown menu position */
+  .dropdown-menu-custom {
+    left: unset !important;
+    right: 0 !important;
+    min-width: 180px;
+    top: 50px !important;
+  }
+
+/* Style the dropdown items */
+.dropdown-menu-custom .dropdown-item {
+    font-size: 14px;
+    padding: 5px;
+  }  
+
+/* Remove Bootstrap's default arrow */
+.dropdown-menu::before,
+.dropdown-menu::after {
+  display: none !important;
+}

@@ -4,9 +4,8 @@ import { MsalAuthProvider, LoginType } from 'react-aad-msal';
 const config = {
   auth: {
     authority: 'https://login.microsoftonline.com/common/',
-    clientId: 'enter client id',
+    clientId: '#################################',
     redirectUri: 'http://localhost:3000/callback'
-    // redirectUri: 'https://interviewschedulerapp.azurewebsites.net/#/'
   },
   cache: {
     cacheLocation: "localStorage",
@@ -14,12 +13,10 @@ const config = {
   }
 };
  
-// Authentication Parameters
 const authenticationParameters = {
   scopes: ["User.Read", "User.Read.All", "Directory.Read.All"]
 }
  
-// Options
 const options = {
   loginType: LoginType.Redirect,
   tokenRefreshUri: window.location.origin + '/auth.html'

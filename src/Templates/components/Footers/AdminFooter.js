@@ -46,7 +46,7 @@ function AdminFooter() {
             </ul> */}
             <p className="copyright text-center">
               © <script>document.write(new Date().getFullYear())</script>
-              <a href="http://www.csharptek.com" target={"_blank"}>Csharptek</a>, make your Invoicing easy.
+              <a href="http://www.csharptek.com" target={"_blank"}>Csharptek</a>
             </p>
           </nav>
         </Container>

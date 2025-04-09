@@ -35,7 +35,7 @@ function AssignInterviewList(props) {
         const user = props.account?.name.split('|');
         const user_name = user[0];
         setloggedInUser(user_name);
-        axios.post('https://interviewschedulerapi.azurewebsites.net/schedulerAPI/interviews')
+        axios.post('#################################/schedulerAPI/interviews')
             .then((response) => {
                 console.log('dfvdf', props.account)
                 setData(response.data)
@@ -45,11 +45,9 @@ function AssignInterviewList(props) {
     }, []);
 
     const downloadFile = (file, name) => {
-        // data:application/vnd.openxmlformats-officedocument.wordprocessingml.document;base64,UEsDBBQABgAIAGe3r1h/YZZinAEAALMIAAATAAgCW0NvbnR
         const split_base64 = file?.split('base64,')
         const actual_file = split_base64[1].replace("',)", '');
         const file_type = split_base64[0]?.replace('data:', '')?.replace("('", '')
-        // Convert base64 to Blob
         console.log('458', file_type, actual_file)
 
         const byteCharacters = atob(actual_file);
@@ -59,14 +57,10 @@ function AssignInterviewList(props) {
         }
         const byteArray = new Uint8Array(byteNumbers);
         const blob = new Blob([byteArray], { type: file_type });
-
-        // Create a link and trigger download
         const link = document.createElement('a');
         link.href = URL.createObjectURL(blob);
         link.download = name;
         link.click();
-
-        // Clean up the URL object
         URL.revokeObjectURL(link.href);
     };
 
